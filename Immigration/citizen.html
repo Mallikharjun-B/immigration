@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversity Visa Program</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background-color: #5d7c78;
+            color: #ffffff;
+            padding: 3px 15px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1px;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 2px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        nav ul li ul li a {
+            color: #343a40;
+        }
+        nav ul li ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff92;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .section h2{
+            color: #007bff;
+        } .section h3 {
+            color: #111e2c;
+        }
+        .section p {
+            color: #333333;
+            line-height: 1.6;
+        }
+        .cards {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #dfd8d8b4;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            /* transform: scale(1,1.2); */
+        }
+        .card h3 {
+            color: #21476f;
+        }
+        .card p {
+            color: #666666;
+        }
+        footer {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0px;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        @media (max-width: 768px) {
+            header, footer {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .cards {
+                flex-direction: column;
+                overflow-x: hidden;
+                gap: 0;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body background="img/3.jpg">
+
+    <header>
+        <div class="logo"><img src="img/logo-removebg-preview (1).png" alt="" width="80px"></div>
+        <nav>
+            <ul>
+                <li style="font-size:120%;margin-top: 8px; "><a href="home.html">Home</a></li>
+                <li><a href="Family.html">Family-Based Immigration</a>
+                    <!-- <ul>
+                        <li><a href="#">Immediate Relatives</a></li>
+                        <li><a href="#">Family Preference</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Employment.html">Employment-Based Immigration</a>
+                    <ul>
+                        <li><a href="Employment.html#page1">Highly Skilled Workers</a></li>
+                        <li><a href="Employment.html#page2">Professionals</a></li>
+                        <li><a href="Employment.html#page3">Other Workers</a></li>
+                        <li><a href="Employment.html#page4">Investors</a></li>
+                    </ul>
+                </li>
+                <li><a href="Refugees.html">Refugees and Asylees</a>
+                    <!-- <ul>
+                        <li><a href="#">Refugees</a></li>
+                        <li><a href="#">Asylees</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Diversity.html">Diversity Visa Program</a>
+                    <ul>
+                        <li><a href="Diversity.html#eligibility">Eligibility</a></li>
+                        <li><a href="Diversity.html#application-process">Application Process</a></li>
+                    </ul>
+                </li>
+                <li><a href="tps.html">TPS and DACA</a>
+                    <!-- <ul>
+                        <li><a href="#">Temporary Protected Status</a></li>
+                        <li><a href="#">Deferred Action for Childhood Arrivals</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="non.html">Non-Immigrant Visas</a>
+                    <ul>
+                        <li><a href="non.html#tourists-business">Tourists and Business Visitors</a></li>
+                        <li><a href="non.html#students">Students</a></li>
+                        <li><a href="non.html#specialized-workers">Specialized Workers</a></li>
+                    </ul>
+                </li>
+                <li><a href="citizen.html">Citizenship and Naturalization</a>
+                    <!-- <ul>
+                        <li><a href="#">Eligibility Requirements</a></li>
+                        <li><a href="#">Naturalization Test</a></li>
+                        <li><a href="#">Application Process</a></li>
+                        <li><a href="#">Citizenship Through Birth</a></li>
+                        <li><a href="#">Derivation and Acquisition</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div id="eligibility-requirements" class="section">
+        <h2>Eligibility Requirements for Citizenship</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Age and Residency</h3>
+                <p>
+                    To apply for citizenship, applicants must be at least 18 years old and have been a lawful permanent resident (green card holder) for at least 5 years.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Continuous Residence</h3>
+                <p>
+                    Applicants must have resided continuously in the United States for at least 5 years prior to applying for citizenship.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Good Moral Character</h3>
+                <p>
+                    Applicants must demonstrate good moral character, including adhering to U.S. laws, paying taxes, and not committing certain crimes.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Language and Civics Test</h3>
+                <p>
+                    Applicants must pass an English language proficiency test and a civics test covering U.S. history and government.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="naturalization-test" class="section">
+        <h2>Naturalization Test</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>English Proficiency</h3>
+                <p>
+                    The English language test assesses an applicant's ability to speak, read, and write in English.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Civics Test</h3>
+                <p>
+                    The civics test covers important U.S. history and government topics. Applicants must correctly answer a set number of questions.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Exemptions and Accommodations</h3>
+                <p>
+                    Some applicants may be exempt from the English language test based on age and length of residency in the U.S. Accommodations are available for individuals with disabilities.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Preparing for the Test</h3>
+                <p>
+                    Study materials, including official guides and practice tests, are available to help applicants prepare for the naturalization test.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="application-process-citizenship" class="section">
+        <h2>Application Process for Citizenship</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Form N-400</h3>
+                <p>
+                    Applicants must complete Form N-400, Application for Naturalization, and submit it along with required documents and fees.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Biometrics Appointment</h3>
+                <p>
+                    Applicants will be scheduled for a biometrics appointment to provide fingerprints, photographs, and a signature.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Interview</h3>
+                <p>
+                    Applicants must attend an interview with USCIS where they will be tested on English proficiency and civics knowledge.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Decision</h3>
+                <p>
+                    USCIS will notify applicants of their decision regarding citizenship. If approved, applicants attend an oath ceremony to complete the process.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="citizenship-through-birth" class="section">
+        <h2>Citizenship Through Birth</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Birth in the United States</h3>
+                <p>
+                    Individuals born in the United States automatically acquire U.S. citizenship, regardless of the citizenship status of their parents.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Birth to U.S. Citizen Parents</h3>
+                <p>
+                    Individuals born outside the United States to at least one U.S. citizen parent may be eligible for U.S. citizenship at birth.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Derivation and Acquisition</h3>
+                <p>
+                    Derivation and acquisition are processes through which individuals may acquire U.S. citizenship through their parents, based on specific circumstances and requirements.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="derivation-acquisition" class="section">
+        <h2>Derivation and Acquisition</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Derivation of Citizenship</h3>
+                <p>
+                    Derivation of citizenship refers to acquiring U.S. citizenship through a parent who is a U.S. citizen, typically when certain conditions are met before the age of 18.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Acquisition of Citizenship</h3>
+                <p>
+                    Acquisition of citizenship refers to becoming a U.S. citizen after birth through the naturalization process for individuals born outside the United States to at least one U.S. citizen parent.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Retention Requirements</h3>
+                <p>
+                    Individuals who acquire U.S. citizenship through derivation or acquisition must meet certain retention requirements to maintain their citizenship status.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Immigration Information Portal. All Rights Reserved</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

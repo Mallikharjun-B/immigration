@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background-color: #5d7c78;
+            color: #ffffff;
+            padding: 3px 15px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1px;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 2px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        nav ul li ul li a {
+            color: #343a40;
+        }
+        nav ul li ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .section p {
+            color: #333333;
+            line-height: 1.6;
+        }
+        footer {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0px;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        @media (max-width: 768px) {
+            header, footer {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="img/logo-removebg-preview (1).png" alt="" width="80px"></div>
+        <nav>
+            <ul>
+                <li style="font-size:120%;margin-top: 8px; "><a href="home.html">Home</a></li>
+                <li><a href="Family.html">Family-Based Immigration</a>
+                    <!-- <ul>
+                        <li><a href="#">Immediate Relatives</a></li>
+                        <li><a href="#">Family Preference</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Employment.html">Employment-Based Immigration</a>
+                    <ul>
+                        <li><a href="Employment.html#page1">Highly Skilled Workers</a></li>
+                        <li><a href="Employment.html#page2">Professionals</a></li>
+                        <li><a href="Employment.html#page3">Other Workers</a></li>
+                        <li><a href="Employment.html#page4">Investors</a></li>
+                    </ul>
+                </li>
+                <li><a href="Refugees.html">Refugees and Asylees</a>
+                    <!-- <ul>
+                        <li><a href="#">Refugees</a></li>
+                        <li><a href="#">Asylees</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Diversity.html">Diversity Visa Program</a>
+                    <ul>
+                        <li><a href="Diversity.html#eligibility">Eligibility</a></li>
+                        <li><a href="Diversity.html#application-process">Application Process</a></li>
+                    </ul>
+                </li>
+                <li><a href="tps.html">TPS and DACA</a>
+                    <!-- <ul>
+                        <li><a href="#">Temporary Protected Status</a></li>
+                        <li><a href="#">Deferred Action for Childhood Arrivals</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="non.html">Non-Immigrant Visas</a>
+                    <ul>
+                        <li><a href="non.html#tourists-business">Tourists and Business Visitors</a></li>
+                        <li><a href="non.html#students">Students</a></li>
+                        <li><a href="non.html#specialized-workers">Specialized Workers</a></li>
+                    </ul>
+                </li>
+                <li><a href="citizen.html">Citizenship and Naturalization</a>
+                    <!-- <ul>
+                        <li><a href="#">Eligibility Requirements</a></li>
+                        <li><a href="#">Naturalization Test</a></li>
+                        <li><a href="#">Application Process</a></li>
+                        <li><a href="#">Citizenship Through Birth</a></li>
+                        <li><a href="#">Derivation and Acquisition</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div class="section">
+        <img src="img/familymigration.jpg" alt="Family-Based Immigration">
+        <h2>Family-Based Immigration</h2>
+        <p>
+            Family-based immigration allows U.S. citizens and lawful permanent residents (LPRs) to bring certain family members to the United States. This category includes visas for immediate relatives and family preference categories.
+        </p>
+        <h3>Immediate Relatives</h3>
+        <p>
+            Immediate relative visas are available to spouses, unmarried children under the age of 21, and parents of U.S. citizens. These visas are not subject to numerical limits, meaning there are no caps on the number of visas issued each year.
+        </p>
+        <h3>Family Preference</h3>
+        <p>
+            Family preference visas are available to more distant relatives of U.S. citizens and certain relatives of LPRs. These categories include:
+        </p>
+        <ul>
+            <li>First Preference (F1): Unmarried sons and daughters of U.S. citizens, and their minor children, if any.</li>
+            <li>Second Preference (F2A): Spouses and children of LPRs.</li>
+            <li>Second Preference (F2B): Unmarried sons and daughters (21 years of age and older) of LPRs.</li>
+            <li>Third Preference (F3): Married sons and daughters of U.S. citizens, and their spouses and minor children.</li>
+            <li>Fourth Preference (F4): Brothers and sisters of adult U.S. citizens, and their spouses and minor children.</li>
+        </ul>
+        <p>
+            Unlike immediate relative visas, family preference visas are subject to annual numerical limits, leading to potential waiting periods for visa availability.
+        </p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Immigration Information Portal. All Rights Reserved</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+</body>
+</html>

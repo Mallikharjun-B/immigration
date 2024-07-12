@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header, footer {
+            background-color: #5d7c78;
+            color: #ffffff;
+            padding: 3px 15px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1px;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 2px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        nav ul li ul li a {
+            color: #343a40;
+        }
+        nav ul li ul li a:hover {
+            background-color: #007bff64;
+            color: #ffffff;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section h2,
+        .section h3 {
+            color: #007bff;
+        }
+
+        .section p {
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        footer {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0px;
+            padding: 20px;
+            font-size: 13px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+
+            header,
+            footer {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="img/logo-removebg-preview (1).png" alt="" width="80px"></div>
+        <nav>
+            <ul>
+                <li style="font-size:120%;margin-top: 8px; "><a href="home.html">Home</a></li>
+                <li><a href="Family.html">Family-Based Immigration</a>
+                    <!-- <ul>
+                        <li><a href="#">Immediate Relatives</a></li>
+                        <li><a href="#">Family Preference</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Employment.html">Employment-Based Immigration</a>
+                    <ul>
+                        <li><a href="Employment.html#page1">Highly Skilled Workers</a></li>
+                        <li><a href="Employment.html#page2">Professionals</a></li>
+                        <li><a href="Employment.html#page3">Other Workers</a></li>
+                        <li><a href="Employment.html#page4">Investors</a></li>
+                    </ul>
+                </li>
+                <li><a href="Refugees.html">Refugees and Asylees</a>
+                    <!-- <ul>
+                        <li><a href="#">Refugees</a></li>
+                        <li><a href="#">Asylees</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="Diversity.html">Diversity Visa Program</a>
+                    <ul>
+                        <li><a href="Diversity.html#eligibility">Eligibility</a></li>
+                        <li><a href="Diversity.html#application-process">Application Process</a></li>
+                    </ul>
+                </li>
+                <li><a href="tps.html">TPS and DACA</a>
+                    <!-- <ul>
+                        <li><a href="#">Temporary Protected Status</a></li>
+                        <li><a href="#">Deferred Action for Childhood Arrivals</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="non.html">Non-Immigrant Visas</a>
+                    <ul>
+                        <li><a href="non.html#tourists-business">Tourists and Business Visitors</a></li>
+                        <li><a href="non.html#students">Students</a></li>
+                        <li><a href="non.html#specialized-workers">Specialized Workers</a></li>
+                    </ul>
+                </li>
+                <li><a href="citizen.html">Citizenship and Naturalization</a>
+                    <!-- <ul>
+                        <li><a href="#">Eligibility Requirements</a></li>
+                        <li><a href="#">Naturalization Test</a></li>
+                        <li><a href="#">Application Process</a></li>
+                        <li><a href="#">Citizenship Through Birth</a></li>
+                        <li><a href="#">Derivation and Acquisition</a></li>
+                    </ul> -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section" id="page1">
+            <img src="highly.jpg" alt="Highly Skilled Workers">
+            <h2>Highly Skilled Workers</h2>
+            <p>
+                Employment-based immigration for highly skilled workers includes individuals with extraordinary
+                abilities in the sciences, arts, education, business, or athletics, outstanding professors and
+                researchers, and multinational executives and managers. These individuals may be eligible for the EB-1
+                visa category.
+            </p>
+            <h3>Requirements</h3>
+            <p>
+                To qualify, applicants must demonstrate sustained national or international acclaim and recognition in
+                their respective fields through extensive documentation and evidence.
+            </p>
+        </div>
+
+        <div class="section" id="page2">
+            <img src="highly2.jpg" alt="Professionals">
+            <h2>Professionals</h2>
+            <p>
+                Employment-based immigration for professionals encompasses those with advanced degrees or exceptional
+                abilities in the sciences, arts, or business. These individuals may be eligible for the EB-2 visa
+                category.
+            </p>
+            <h3>Requirements</h3>
+            <p>
+                Applicants must have an advanced degree or its equivalent, or demonstrate exceptional ability in their
+                professional field. This includes substantial documentation and recognition of their expertise.
+            </p>
+        </div>
+
+        <div class="section" id="page3">
+            <img src="others.jpg" alt="Other Workers">
+            <h2>Other Workers</h2>
+            <p>
+                Employment-based immigration for other workers includes skilled workers, professionals, and unskilled
+                workers who may qualify for the EB-3 visa category. This category covers a broad range of employment
+                opportunities.
+            </p>
+            <h3>Requirements</h3>
+            <p>
+                Skilled workers must have at least two years of job experience or training. Professionals must possess a
+                U.S. bachelor's degree or its foreign equivalent, and unskilled workers must be capable of performing
+                unskilled labor, not of a temporary or seasonal nature, for which qualified workers are not available in
+                the United States.
+            </p>
+        </div>
+
+        <div class="section" id="page4">
+            <img src="investors.jpg" alt="Investors">
+            <h2>Investors</h2>
+            <p>
+                The EB-5 visa category is for immigrant investors who are willing to invest significant capital in a new
+                commercial enterprise in the United States and create jobs for U.S. workers.
+            </p>
+            <h3>Requirements</h3>
+            <p>
+                To qualify, investors must invest $1 million in a new commercial enterprise, or $500,000 in a targeted
+                employment area (high-unemployment or rural area), and create or preserve at least 10 full-time jobs for
+                qualifying U.S. workers within two years of the immigrant investor's admission to the United States.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Immigration Information Portal. All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
